@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <script src="../js/jquery-3.3.1.min.js"></script>  
+  <script src="../js/jquery-3.3.1.min.js"></script>
   <link rel="stylesheet" href="../css/bootstrap.min.css">
   <script src="../js/bootstrap.min.js"></script>
 
@@ -61,8 +62,574 @@
     </ul>
   </nav>
 </head>
+
 <body>
-  <h1>HTML Essential Training Part 2</h1>
+  <div class="container">
+    <h1>HTML Essential Training Part 2</h1>
+    <h2>Below are code snippets I made based on the lectures from
+      <a href="https://www.lynda.com/HTML-tutorials/HTML-Essential-Training/170427-2.html">this Lynda.com course</a>.</h2>
+      <h3>Chapter 4</h3>
+      <h5>blog.html</h5>
+      <pre><code>
+          &lt;!doctype html&gt;
+          &lt;html lang="en"&gt;
+          &lt;head&gt;
+              &lt;meta charset="UTF-8"&gt;
+              &lt;title&gt;Controlling document outlines&lt;/title&gt;
+              &lt;style&gt;
+                  .book {
+                      background: #369;
+                      padding: 16px;
+                      width: 250px;
+                      color: white;
+                      margin-bottom: 16px;
+                  }
+          
+                  .book h5 {
+                      font: 1.2em Arial, sans-serif;
+                      margin: 0;
+                  }
+              &lt;/style&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+          &lt;h1&gt;My Big Blog &lt;/h1&gt;
+          &lt;nav&gt;
+              &lt;p&gt;site navigation &lt;/p&gt;
+          &lt;/nav&gt;
+          &lt;article&gt;
+              &lt;h2&gt;Things I like &lt;/h2&gt;
+              &lt;section&gt;
+                  &lt;h3&gt;My favorite books &lt;/h3&gt;
+                  &lt;h4&gt;Fiction &lt;/h4&gt;
+                  &lt;div class="book"&gt;
+                      &lt;h5&gt;The Hobbit &lt;/h5&gt;
+                      &lt;p&gt;by JRR Tolkein&lt;/p&gt;
+                      &lt;p&gt;A short, slightly introverted humanoid goes on a grand adventure and steals a ring.&lt;/p&gt;
+                  &lt;/div&gt;
+                  &lt;div class="book"&gt;
+                      &lt;h5&gt;Animal Farm&lt;/h5&gt;
+                      &lt;p&gt;by George Orwell&lt;/p&gt;
+                      &lt;p&gt;Animals revolt against their farmer only to find that the pigs that take his place are just as bad.&lt;/p&gt;
+                  &lt;/div&gt;
+                  &lt;div class="book"&gt;
+                      &lt;h5&gt;House of Leaves &lt;/h5&gt;
+                      &lt;p&gt;by Mark Danielewski&lt;/p&gt;
+                      &lt;p&gt;A story within a story of a family that learns their house is bigger on the inside than it is outside&lt;/p&gt;
+                  &lt;/div&gt;
+                  &lt;h4&gt;Non-fiction&lt;/h4&gt;
+                  &lt;p&gt;Theodore Rex&lt;/p&gt;
+                  &lt;p&gt;Moonwalking with Einstein &lt;/p&gt;
+                  &lt;p&gt;1493: Uncovering the New World Columbus Created &lt;/p&gt;
+              &lt;/section&gt;
+              &lt;section&gt;
+                  &lt;h3&gt;My favorite movies and shows &lt;/h3&gt;
+                  &lt;h4&gt;Movies &lt;/h4&gt;
+                  &lt;ul&gt;
+                      &lt;li&gt;The Wall&lt;/li&gt;
+                      &lt;li&gt;Apocalypse Now&lt;/li&gt;
+                      &lt;li&gt;Fight Club&lt;/li&gt;
+                  &lt;/ul&gt;
+                  &lt;h4&gt;TV Shows &lt;/h4&gt;
+                  &lt;ul&gt;
+                      &lt;li&gt;The Wire&lt;/li&gt;
+                      &lt;li&gt;Breaking Bad&lt;/li&gt;
+                      &lt;li&gt;The Office&lt;/li&gt;
+                  &lt;/ul&gt;
+              &lt;/section&gt;
+              &lt;section&gt;
+                  &lt;h3&gt;My favorite music &lt;/h3&gt;
+                  &lt;h4&gt;Jazz &lt;/h4&gt;
+                  &lt;ul&gt;
+                      &lt;li&gt;Charles Mingus&lt;/li&gt;
+                      &lt;li&gt;Miles Davis&lt;/li&gt;
+                      &lt;li&gt;Art Blakey&lt;/li&gt;
+                  &lt;/ul&gt;
+                  &lt;h4&gt;Rock &lt;/h4&gt;
+                  &lt;ul&gt;
+                      &lt;li&gt;Faith No More&lt;/li&gt;
+                      &lt;li&gt;Tool&lt;/li&gt;
+                      &lt;li&gt;Slayer&lt;/li&gt;
+                  &lt;/ul&gt;
+                  &lt;h4&gt;Americana&lt;/h4&gt;
+                  &lt;ul&gt;
+                      &lt;li&gt;Avett Brothers&lt;/li&gt;
+                      &lt;li&gt;Shovels and Rope&lt;/li&gt;
+                      &lt;li&gt;Old Crow Medicine Show&lt;/li&gt;
+                  &lt;/ul&gt;
+              &lt;/section&gt;
+              &lt;aside&gt;
+                  &lt;h3&gt;Spotlight favorite&lt;/h3&gt;
+                  &lt;p&gt;One of my favorite albums has always been Radiohead's OK Computer. It's such a transitional album, as it
+                      bridges the gap between sweeping, album-based releases to the present day scene of downloaded songs that
+                      aren't consumed in the framework of a larger piece. Rolling Stone once called it the &quot;last great album,&quot;
+                      and they might have been right!&lt;/p&gt;
+              &lt;/aside&gt;
+          &lt;/article&gt;
+          &lt;p&gt;copywrite my blog. Feel free to republish with attribution&lt;/p&gt;
+          &lt;/body&gt;
+          &lt;/html&gt;          
+      </code></pre>
+      <h5>index.html</h5>
+      <pre><code>
+          &lt;!DOCTYPE html&gt;
+          &lt;html lang="en"&gt;
+          &lt;head&gt;
+              &lt;meta charset="UTF-8"&gt;
+              &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+              &lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt;
+              &lt;title&gt;Document&lt;/title&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+              
+          &lt;/body&gt;
+          &lt;/html&gt;
+      </code></pre>
+      <h5>outline.html</h5>
+      <pre><code>
+          &lt;!doctype html&gt;
+          &lt;html lang="en"&gt;
+          &lt;head&gt;
+              &lt;meta charset="UTF-8"&gt;
+              &lt;title&gt;Controlling document outlines&lt;/title&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+          &lt;h1&gt;My Big Blog &lt;/h1&gt;
+          &lt;nav&gt;
+          &lt;p&gt;site navigation &lt;/p&gt;
+          &lt;/nav&gt;
+          &lt;article&gt;
+          &lt;h2&gt;Things I like &lt;/h2&gt;
+          &lt;h3&gt;My favorite books &lt;/h3&gt;
+          &lt;section&gt;
+          &lt;h4&gt;Fiction &lt;/h4&gt;
+          &lt;ul&gt;
+              &lt;li&gt;The Hobbit &lt;/li&gt;
+              &lt;li&gt;Animal Farm&lt;/li&gt;
+              &lt;li&gt;House of Leaves &lt;/li&gt;
+          &lt;/ul&gt;
+          &lt;h4&gt;Non-fiction&lt;/h4&gt;
+          &lt;ul&gt;
+              &lt;li&gt;Theodore Rex&lt;/li&gt;
+              &lt;li&gt;Moonwalking with Einstein &lt;/li&gt;
+              &lt;li&gt;1493: Uncovering the New World Columbus Created &lt;/li&gt;
+          &lt;/ul&gt;
+          &lt;/section&gt;
+          &lt;section&gt;
+          &lt;h3&gt;My favorite movies and shows &lt;/h3&gt;
+          &lt;h4&gt;Movies &lt;/h4&gt;
+          &lt;ul&gt;
+              &lt;li&gt;The Wall&lt;/li&gt;
+              &lt;li&gt;Apocalypse Now&lt;/li&gt;
+              &lt;li&gt;Fight Club&lt;/li&gt;
+          &lt;/ul&gt;
+          &lt;h4&gt;TV Shows &lt;/h4&gt;
+          &lt;ul&gt;
+              &lt;li&gt;The Wire&lt;/li&gt;
+              &lt;li&gt;Breaking Bad&lt;/li&gt;
+              &lt;li&gt;The Office&lt;/li&gt;
+          &lt;/ul&gt;
+          &lt;/section&gt;
+          &lt;section&gt;
+          &lt;h3&gt;My favorite music &lt;/h3&gt;
+          &lt;h4&gt;Jazz &lt;/h4&gt;
+          &lt;ul&gt;
+              &lt;li&gt;Charles Mingus&lt;/li&gt;
+              &lt;li&gt;Miles Davis&lt;/li&gt;
+              &lt;li&gt;Art Blakey&lt;/li&gt;
+          &lt;/ul&gt;
+          &lt;h4&gt;Rock &lt;/h4&gt;
+          &lt;ul&gt;
+              &lt;li&gt;Faith No More&lt;/li&gt;
+              &lt;li&gt;Tool&lt;/li&gt;
+              &lt;li&gt;Slayer&lt;/li&gt;
+          &lt;/ul&gt;
+          &lt;h4&gt;Americana&lt;/h4&gt;
+          &lt;ul&gt;
+              &lt;li&gt;Avett Brothers&lt;/li&gt;
+              &lt;li&gt;Shovels and Rope&lt;/li&gt;
+              &lt;li&gt;Old Crow Medicine Show&lt;/li&gt;
+          &lt;/ul&gt;
+          &lt;/section&gt;
+          &lt;aside&gt;
+          &lt;h3&gt;Spotlight favorite&lt;/h3&gt;
+          &lt;p&gt;One of my favorite albums has always been Radiohead's OK Computer. It's such a transitional album, as it bridges the gap between sweeping, album-based releases to the present day scene of downloaded songs that aren't consumed in the framework of a larger piece. Rolling Stone once called it the &quot;last great album,&quot; and they might have been right!&lt;/p&gt;
+          &lt;p&gt;copywrite my blog. Feel free to republish with attribution&lt;/p&gt;
+          &lt;/aside&gt;
+          &lt;/article&gt;
+          &lt;/body&gt;
+          &lt;/html&gt;          
+      </code></pre>
+      <h5>structure.html</h5>
+      <pre><code>
+          &lt;!DOCTYPE HTML&gt;
+          &lt;html lang="en"&gt;
+          &lt;head&gt;
+              &lt;meta charset="utf-8"&gt;
+              &lt;title&gt;Introduction to HTML&lt;/title&gt;
+              &lt;link href="_css/styles.css" rel="stylesheet" type="text/css"&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+          &lt;header role="banner"&gt;
+              &lt;h1&gt;HTML Essential Training&lt;/h1&gt;
+              &lt;h2&gt;Structuring Pages&lt;/h2&gt;
+              &lt;nav role="navigation"&gt;
+                  &lt;ul&gt;
+                      &lt;li&gt;&lt;a href="intro.htm" title="Introduction to HTML"&gt;Introduction to HTML&lt;/a&gt;&lt;/li&gt;
+                      &lt;li&gt;&lt;a href="syntax.htm" title="HTML syntax"&gt;HTML syntax&lt;/a&gt;&lt;/li&gt;
+                      &lt;li&gt;&lt;a href="structure.htm" title="Structuring pages"&gt;Structuring pages&lt;/a&gt;&lt;/li&gt;
+                      &lt;li&gt;&lt;a href="links.htm" title="Creating links"&gt;Creating links&lt;/a&gt;&lt;/li&gt;
+                      &lt;li&gt;&lt;a href="reference.htm" title="HTML Reference"&gt;HTML reference&lt;/a&gt;&lt;/li&gt;
+                      &lt;li&gt;&lt;a href="next.htm" title="Next steps"&gt;Next steps&lt;/a&gt;&lt;/li&gt;
+                  &lt;/ul&gt;
+              &lt;/nav&gt;
+          &lt;/header&gt;
+          &lt;main role="main"&gt;
+              &lt;article role="article"&gt;
+                  &lt;header&gt;
+                      &lt;h3&gt; Conveying meaning through structure &lt;/h3&gt;
+                      &lt;p&gt;Creating properly structured pages is the foundation of any good website. A solid semantic structure
+                          allows
+                          you to
+                          convey meaning and properly represent content types through nothing more than the page's markup. This,
+                          in
+                          turn,
+                          makes your content more accessible, easier to index and search, and makes it easier to repurpose.
+                          Remember
+                          that
+                          there are a lot of different devices, robots, and other user agents that will be reading your code. &lt;em&gt;Without
+                              a
+                              consistent, semantic structure your site will be less effective.&lt;/em&gt;&lt;/p&gt;
+                  &lt;/header&gt;
+                  &lt;section&gt;
+                      &lt;h3&gt;Sectioning elements &lt;/h3&gt;
+                      &lt;p&gt;One way to add meaning to your content is to organize them into sections that convey meaning and
+                          structure.
+                          For
+                          example it's pretty standard to contain introductory information within a section, page navigation
+                          within
+                          its own
+                          area, the page's main content in its own region, and related information within a sidebar. HTML contains
+                          numerous
+                          elements that are designed to assist in the logical structuring and semantics of page content. &lt;/p&gt;
+                      &lt;p&gt;In previous versions of HTML creating new sections of content was done almost exclusively through the use
+                          of
+                          &lt;a
+                                  href="http://www.w3.org/TR/html51/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements"
+                                  title="heading elements"&gt;&lt;b&gt;heading&lt;/b&gt;&lt;/a&gt; tags, with &lt;b&gt;divs&lt;/b&gt; being used to group areas of
+                          content
+                          together. &lt;b&gt;Class&lt;/b&gt; or &lt;b&gt;ID&lt;/b&gt; attributes would allow designers to attach more semantic meaning to
+                          the
+                          groups,
+                          although this meant little to most user agents. In HTML5 new sectioning and semantic elements were
+                          introduced to
+                          help represent commonly used sections and create more consistent page structures. Tags like the
+                          &lt;b&gt;aside&lt;/b&gt;,
+                          &lt;b&gt;article&lt;/b&gt;,
+                          &lt;b&gt;footer&lt;/b&gt;, &lt;b&gt;header&lt;/b&gt;, &lt;b&gt;main&lt;/b&gt;, &lt;b&gt;nav&lt;/b&gt;, and &lt;b&gt;section&lt;/b&gt; allow authors to identify
+                          common
+                          page
+                          regions and convey more semantic meaning. &lt;/p&gt;
+                      &lt;p&gt;Although some of these elements are very specific, in many cases which element you'll use and how you'll
+                          structure
+                          them is very much a judgment call. Make sure, however, that your finished structure represents the
+                          desired
+                          document
+                          outline. &lt;/p&gt;
+                      &lt;p&gt;Learn more about the new sectioning and semantic elements:&lt;/p&gt;
+                      &lt;ul&gt;
+                          &lt;li&gt;&lt;a href="http://www.w3.org/TR/html51/sections.html#the-aside-element"
+                                 title="aside element"&gt;&lt;b&gt;aside&lt;/b&gt;&lt;/a&gt;
+                          &lt;/li&gt;
+                          &lt;li&gt;&lt;a href="http://www.w3.org/TR/html51/sections.html#the-article-element"
+                                 title="article element"&gt;&lt;b&gt;article&lt;/b&gt;&lt;/a&gt;&lt;/li&gt;
+                          &lt;li&gt;&lt;a href="http://www.w3.org/TR/html51/sections.html#the-footer-element"
+                                 title="footer element"&gt;&lt;b&gt;footer&lt;/b&gt;&lt;/a&gt;
+                          &lt;/li&gt;
+                          &lt;li&gt;&lt;a href="http://www.w3.org/TR/html51/sections.html#the-header-element"
+                                 title="header element"&gt;&lt;b&gt;header&lt;/b&gt;&lt;/a&gt;
+                          &lt;/li&gt;
+                          &lt;li&gt;&lt;a href="http://www.w3.org/TR/html51/grouping-content.html#the-main-element"
+                                 title="main element"&gt;&lt;b&gt;main&lt;/b&gt;&lt;/a&gt;&lt;/li&gt;
+                          &lt;li&gt;&lt;a href="http://www.w3.org/TR/html51/sections.html#the-nav-element"
+                                 title="nav element"&gt;&lt;b&gt;nav&lt;/b&gt;&lt;/a&gt;
+                          &lt;/li&gt;
+                          &lt;li&gt;&lt;a href="http://www.w3.org/TR/html51/sections.html#the-section-element"
+                                 title="section element"&gt;&lt;b&gt;section&lt;/b&gt;&lt;/a&gt;&lt;/li&gt;
+                      &lt;/ul&gt;
+                  &lt;/section&gt;
+                  &lt;section&gt;
+                      &lt;h3&gt;Document outlines &lt;/h3&gt;
+                      &lt;p&gt;One of the fundamental concepts of HTML is that its documents can be represented by a document outline
+                          that
+                          summarizes the content of the page. Imagine a page being represented by a table of contents and you'll
+                          have
+                          a good
+                          idea of what one of these outlines might look like. These outlines assist in tasks such as quickly
+                          searching
+                          documents and making content easier to navigate for assistive devices. &lt;/p&gt;
+                      &lt;p&gt;Prior to HTML5, document outlines were generated entirely through the use of headings. An H1 at the top
+                          of
+                          the page
+                          would serve to identify the page content, and subsequent headings would create sections and subsections
+                          inside of
+                          it. This meant that having a strategy for when to use certain headings was critical for maintaining
+                          consistent
+                          document structure. In HTML5 a new outline algorithm was introduced that added the new sectioning
+                          elements
+                          to the
+                          heading elements and created a more sophisticated outlining model. Although not currently implemented by
+                          user agents
+                          it is still recommended that authors familiarize themselves with it so that they're using the new
+                          sectioning
+                          and
+                          semantic tags properly. &lt;/p&gt;
+                      &lt;p&gt;It is still considered to be a best practice to use heading tags to establish the document outline.
+                          Mozilla
+                          has a
+                          fantastic article on &lt;a
+                                  href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Sections_and_Outlines_of_an_HTML5_document"
+                                  title="Mozilla Dev article on HTML sections"&gt;sections and outlines&lt;/a&gt; in HTML documents that I
+                          strongly
+                          recommend reading.&lt;/p&gt;
+                      &lt;aside role="complementary"&gt;
+                          &lt;h4&gt;W3C Warning&lt;/h4&gt;
+                          &lt;p&gt;At the time of the authoring of this course, the W3C had posted this warning regarding the HTML5
+                              outline
+                              algorithm:&lt;/p&gt;
+                          &lt;blockquote&gt;There are currently no known implementations of the outline algorithm in graphical browsers
+                              or
+                              assistive
+                              technology user agents, although the algorithm is implemented in other software such as conformance
+                              checkers.
+                              Therefore the outline algorithm cannot be relied upon to convey document structure to users. Authors
+                              are
+                              advised to
+                              use heading rank (h1-h6) to convey document structure.
+                          &lt;/blockquote&gt;
+                      &lt;/aside&gt;
+                  &lt;/section&gt;
+                  &lt;section&gt;
+                      &lt;h3&gt;WAI-ARIA Roles&lt;/h3&gt;
+                      &lt;p&gt;Carefully structuring an HTML page is the first step into ensuring that the content is accessible to all
+                          users. You
+                          should also use WAI-ARIA role attributes where appropriate to increase accessibility and improve
+                          semantics.
+                          WAI-ARIA
+                          is short for the Web Accessibility Initiative's Accessible Rich Internet Application specification. The
+                          roles
+                          attribute attempts to identify content and its capabilities by assigning it to a predefined role. This
+                          helps
+                          assistive devices understand what the content is, how it relates to other content, and how the content
+                          can
+                          be
+                          interacted with. The W3C has a &lt;a href="http://www.w3.org/TR/2014/WD-aria-in-html-20140626/"
+                                                            title="Using WAI-ARIA in HTML"&gt;fantastic resource&lt;/a&gt; on how WAI-ARIA
+                          works and
+                          how it should be used with HTML.&lt;/p&gt;
+                  &lt;/section&gt;
+              &lt;/article&gt;
+          &lt;/main&gt;
+          &lt;footer role="contentinfo"&gt;
+              &lt;p&gt;&copy; &lt;a href="http://www.lynda.com" title="lynda.com" target="_blank"&gt;lynda.com&lt;/a&gt; | follow me and lynda.com
+                  on
+                  Twitter! &lt;a href="https://twitter.com/jameswillweb" title="Follow me on Twitter"&gt;@jameswillweb&lt;/a&gt; &lt;a
+                          href="https://twitter.com/lynda" title="Follow lynda.com on Twitter"&gt;@lyndadotcom&lt;/a&gt;&lt;/p&gt;
+          &lt;/footer&gt;
+          &lt;/body&gt;
+          &lt;/html&gt;          
+      </code></pre>
+      <h3>Chapter 5</h3>
+      <h5>links.html</h5>
+      <pre><code>
+          &lt;!doctype html&gt;
+          &lt;html lang="en"&gt;
+          &lt;head&gt;
+              &lt;meta charset="utf-8"&gt;
+              &lt;title&gt;Creating Links&lt;/title&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+          &lt;h1&gt;Linking to pages within your site&lt;/h1&gt;
+          &lt;h2&gt;Top Page&lt;/h2&gt;
+          &lt;p&gt;Link to the &lt;a href="same.htm" title="link to page in same directory"&gt;same.htm&lt;/a&gt; page, in the same directory&lt;/p&gt;
+          &lt;p&gt;Link to the &lt;a href="info/extras/resources.htm" title="down two directories"&gt;resources.htm&lt;/a&gt; page, in a nested
+              directory&lt;/p&gt;
+          &lt;/body&gt;
+          &lt;/html&gt;
+      </code></pre>
+      <h5>same.html</h5>
+      <pre><code>
+          &lt;!doctype html&gt;
+          &lt;html lang="en"&gt;
+          &lt;head&gt;
+              &lt;meta charset="utf-8"&gt;
+              &lt;title&gt;Creating Links&lt;/title&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+          &lt;h1&gt;Linking to pages within your site&lt;/h1&gt;
+          &lt;h2&gt;Same&lt;/h2&gt;
+          &lt;p&gt;This page is in the same directory as links.htm&lt;/p&gt;
+          &lt;/body&gt;
+          &lt;/html&gt;      
+      </code></pre>
+      <h5>about.html</h5>
+      <pre><code>
+          &lt;!doctype html&gt;
+          &lt;html lang="en"&gt;
+          &lt;head&gt;
+              &lt;meta charset="utf-8"&gt;
+              &lt;title&gt;Creating Links&lt;/title&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+          &lt;h1&gt;Linking to pages within your site&lt;/h1&gt;
+          &lt;h2&gt;About&lt;/h2&gt;
+          &lt;p&gt;Link to the &lt;a href="../links.htm" title="up one directory"&gt;links.htm&lt;/a&gt; page, up one directory&lt;/p&gt;
+          &lt;p&gt;Link to the &lt;a href="extras/resources.htm" title="down one directory"&gt;resources.htm&lt;/a&gt; page, down one directory&lt;/p&gt;
+          &lt;/body&gt;
+          &lt;/html&gt;          
+      </code></pre>
+      <h5>resources.html</h5>
+      <pre><code>
+          &lt;!doctype html&gt;
+          &lt;html lang="en"&gt;
+          &lt;head&gt;
+              &lt;meta charset="utf-8"&gt;
+              &lt;title&gt;Creating Links&lt;/title&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+          &lt;h1&gt;Linking to pages within your site&lt;/h1&gt;
+          &lt;h2&gt;Resources&lt;/h2&gt;
+          &lt;p&gt;Link to the &lt;a href="../about.htm" title="up one directory"&gt;about.htm&lt;/a&gt; page, up one directory&lt;/p&gt;
+          &lt;p&gt;Link to the &lt;a href="../../links.htm" title="up two directories"&gt;links.htm&lt;/a&gt; page, up two directories&lt;/p&gt;
+          &lt;/body&gt;
+          &lt;/html&gt;          
+      </code></pre>
+      <h5>absolute.html</h5>
+      <pre><code>
+          &lt;!doctype html&gt;
+          &lt;html lang="en"&gt;
+            &lt;head&gt;
+            &lt;meta charset="utf-8"&gt;
+            &lt;title&gt;Creating Links&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+              &lt;h1&gt;Linking to external sites&lt;/h1&gt;
+              &lt;p&gt;&lt;a href="http://www.lynda.com" title="Visit lynda.com" target="_blank"&gt;Visit lynda.com!&lt;/a&gt;&lt;/p&gt;
+            &lt;/body&gt;
+          &lt;/html&gt;          
+      </code></pre>
+      <h5>resource.html</h5>
+      <pre><code>
+          &lt;!doctype html&gt;
+          &lt;html lang="en"&gt;
+            &lt;head&gt;
+            &lt;meta charset="utf-8"&gt;
+            &lt;title&gt;Creating Links&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+              &lt;h1&gt;Linking to resources&lt;/h1&gt;
+              &lt;p&gt;Download our &lt;a href="_assets/syntax.pdf" title="HTML Syntax reference" download&gt;HTML syntax reference!&lt;/a&gt;&lt;/p&gt;
+            &lt;/body&gt;
+          &lt;/html&gt;          
+      </code></pre>
+      <h5>destination.html</h5>
+      <pre><code>
+          &lt;!doctype html&gt;
+          &lt;html lang="en"&gt;
+            &lt;head&gt;
+            &lt;meta charset="utf-8"&gt;
+            &lt;title&gt;Creating Links&lt;/title&gt;
+            &lt;style&gt;
+            body {
+              font: 100% Arial, Helvetica, sans-serif;
+            }
+            h1 {
+              font-size: 1.8em;
+            }
+            h2 {
+              font-size: 1.4em;
+            }
+            h3 {
+              font-size: 1.2em;
+              margin-bottom: 0;
+              margin-top: 1em;
+            }
+            p {
+              width: 40%;
+              margin: 0 0 1em;
+            }
+            &lt;/style&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+              &lt;h1&gt;Using fragment identifiers&lt;/h1&gt;
+              &lt;h3 id="one"&gt;Section 1&lt;/h3&gt;
+            &lt;p&gt; Quisque suscipit rhoncus lacus vitae venenatis. Maecenas metus dui,  dapibus id tristique ut, viverra eu dui. Suspendisse potenti. Donec  consequat vulputate erat, vitae rutrum felis pharetra eget. Nunc  bibendum, erat nec dapibus eleifend, nunc ipsum fermentum orci, ac  pellentesque dolor ante dictum lectus. Suspendisse eu posuere enim.  Nulla facilisi. Praesent eu augue arcu. Nam a purus leo. Nulla facilisi.  Integer mattis mauris et est lobortis a scelerisque neque convallis.  Donec feugiat dignissim neque vel ornare. &lt;/p&gt;
+              &lt;p&gt; Etiam semper urna eget dolor varius quis iaculis augue tempor. Sed in  diam suscipit quam tempus imperdiet. Morbi sollicitudin, justo et  fringilla aliquet, lacus elit porta leo, ornare elementum orci turpis  vitae odio. Aenean ullamcorper, justo vitae blandit porta, tellus augue  tristique neque, id interdum enim turpis sit amet erat. Nulla fringilla  gravida velit sed laoreet. Morbi ut nisi a ligula tristique pulvinar. In  ligula ante, mattis tincidunt cursus a, ultricies eget sapien. &lt;/p&gt;
+              &lt;p&gt;Nunc  bibendum, erat nec dapibus eleifend, nunc ipsum fermentum orci, ac  pellentesque dolor ante dictum lectus. Suspendisse eu posuere enim.  Nulla facilisi. Praesent eu augue arcu. Nam a purus leo. Nulla facilisi.  Integer mattis mauris et est lobortis a scelerisque neque convallis.  Donec feugiat dignissim neque vel ornare. Morbi sollicitudin, justo et  fringilla aliquet, lacus elit porta leo, ornare elementum orci turpis  vitae odio. Aenean ullamcorper, justo vitae blandit porta, tellus augue  tristique neque, id interdum enim turpis sit amet erat. Nulla fringilla  gravida velit sed laoreet. &lt;/p&gt;
+              &lt;p&gt;Suspendisse potenti. Donec  consequat vulputate erat, vitae rutrum felis pharetra eget. Nunc  bibendum, erat nec dapibus eleifend, nunc ipsum fermentum orci, ac  pellentesque dolor ante dictum lectus. Suspendisse eu posuere enim.  Nulla facilisi. Praesent eu augue arcu. Nam a purus leo. Nulla facilisi.  Integer mattis mauris et est lobortis a scelerisque neque convallis. Nulla facilisi. Praesent eu augue arcu. Nam a purus leo. Nulla facilisi.  Integer mattis mauris et est lobortis a scelerisque neque convallis.  Donec feugiat dignissim neque vel ornare. Morbi sollicitudin, justo et  fringilla aliquet, lacus elit porta leo, ornare elementum orci turpis  vitae odio. &lt;/p&gt;
+              &lt;h3 id="two"&gt;Section 2&lt;/h3&gt;
+              &lt;p&gt; Aliquam at augue massa, at sagittis turpis. Donec ac enim at leo aliquam  ultricies non nec tortor. Quisque tristique ligula ac erat dapibus eget  pharetra turpis pharetra. Nulla sit amet mauris sapien. Sed tempus,  magna vitae convallis cursus, dolor lorem tempor ipsum, in suscipit  neque nibh a risus. Nullam gravida commodo ultricies. Etiam mollis  tempus nisi, sed molestie arcu interdum at. Nunc ac arcu leo. Nunc  sapien leo, vehicula vitae molestie id, adipiscing nec est. &lt;/p&gt;
+              &lt;p&gt; Fusce iaculis magna laoreet magna vestibulum id rhoncus felis cursus.  Etiam in suscipit sapien. Vestibulum ante ipsum primis in faucibus orci  luctus et ultrices posuere cubilia Curae; Vestibulum ipsum ante,  placerat in imperdiet ut, pharetra vel enim. Phasellus dolor velit,  aliquam eu congue in, pretium id dui. Sed ac massa nisi. Maecenas  accumsan lacinia diam eu auctor. Mauris elementum, mi vel dictum  blandit, eros arcu dignissim mauris, eu ultrices lacus lectus ac dui.  Cras ipsum dolor, vestibulum vel imperdiet consectetur, imperdiet  sagittis nisi. Mauris consectetur vulputate volutpat. Sed tincidunt,  lorem gravida consectetur aliquam, magna arcu gravida justo, condimentum  facilisis dui justo eu magna. Pellentesque at elit quam. &lt;/p&gt;
+              &lt;h3 id="three"&gt;Section 3&lt;/h3&gt;
+              &lt;p&gt; Nulla facilisi. Duis est nibh, rutrum in hendrerit a, faucibus sit amet  augue. Proin id augue in magna rutrum tristique vitae at libero. Etiam  nulla nisl, pretium eget condimentum et, egestas sed diam. Maecenas  pellentesque metus eu mi viverra fermentum tristique turpis suscipit.  Nullam quis ultrices tellus. Suspendisse aliquam tempor velit eu  interdum. Nunc urna libero, dapibus at varius nec, hendrerit in est.  Donec faucibus magna id lorem feugiat et ornare nisl vestibulum. Fusce  euismod malesuada dui, in porttitor odio egestas ac. Morbi sollicitudin  interdum pulvinar. Cras non arcu velit. &lt;/p&gt;
+              &lt;p&gt;Sed in  diam suscipit quam tempus imperdiet. Morbi sollicitudin, justo et  fringilla aliquet, lacus elit porta leo, ornare elementum orci turpis  vitae odio. Aenean ullamcorper, justo vitae blandit porta, tellus augue  tristique neque, id interdum enim turpis sit amet erat. Nulla fringilla  gravida velit sed laoreet. Morbi ut nisi a ligula tristique pulvinar. In  ligula ante, mattis tincidunt cursus a, ultricies eget sapien. &lt;/p&gt;
+              &lt;p&gt;Etiam mollis  tempus nisi, sed molestie arcu interdum at. Nunc ac arcu leo. Nunc  sapien leo, vehicula vitae molestie id, adipiscing nec est. Nunc  bibendum, erat nec dapibus eleifend, nunc ipsum fermentum orci, ac  pellentesque dolor ante dictum lectus. Suspendisse eu posuere enim.  Nulla facilisi. Praesent eu augue arcu. Nam a purus leo. Nulla facilisi.  Integer mattis mauris et est lobortis a scelerisque neque convallis.  Donec feugiat dignissim neque vel ornare.&lt;/p&gt;
+          &lt;p&gt;&nbsp;&lt;/p&gt;
+            &lt;/body&gt;
+          &lt;/html&gt;          
+      </code></pre>
+      <h5>fragments.html</h5>
+      <pre><code>
+          &lt;!doctype html&gt;
+          &lt;html lang="en"&gt;
+            &lt;head&gt;
+            &lt;meta charset="utf-8"&gt;
+            &lt;title&gt;Creating Links&lt;/title&gt;
+            &lt;style&gt;
+            body {
+              font: 100% Arial, Helvetica, sans-serif;
+            }
+            h1 {
+              font-size: 1.8em;
+            }
+            h2 {
+              font-size: 1.4em;
+            }
+            h3 {
+              font-size: 1.2em;
+              margin-bottom: 0;
+              margin-top: 1em;
+            }
+            p {
+              width: 40%;
+              margin: 0 0 1em;
+            }
+            &lt;/style&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+              &lt;h1 id="top"&gt;Using fragment identifiers&lt;/h1&gt;
+              &lt;p&gt;Fragment identifiers can be used to link to another section within the same page, or a specific section of another page. To use fragment identifiers, you target an element with an ID attribute using a link. You resolve the link by using the value of the ID attribute preceded by the hash tag (#).&lt;/p&gt;
+              &lt;h2&gt;Try it out!&lt;/h2&gt;
+              &lt;p&gt;&lt;a href="#one" title="section one"&gt;Link to Section 1&lt;/a&gt;&lt;/p&gt;
+              &lt;p&gt;&lt;a href="#two" title="section two"&gt;Link to Section 2&lt;/a&gt;&lt;/p&gt;
+              &lt;p&gt;&lt;a href="#three" title="section three"&gt;Link to Section 3&lt;/a&gt;&lt;/p&gt;
+              &lt;p&gt;&lt;a href="destination.htm#two" title="destination"&gt;Link to Section 2 of the destination.htm page&lt;/a&gt;&lt;/p&gt;
+              &lt;p&gt;&lt;a href="http://www.w3.org/TR/html401/intro/intro.html#fragment-uri" title="w3c"&gt;Fragment identifiers as defined by the W3C&lt;/a&gt;&lt;/p&gt;
+             &lt;h3 id="one"&gt;Section 1&lt;/h3&gt;
+          &lt;p&gt; Quisque suscipit rhoncus lacus vitae venenatis. Maecenas metus dui,  dapibus id tristique ut, viverra eu dui. Suspendisse potenti. Donec  consequat vulputate erat, vitae rutrum felis pharetra eget. Nunc  bibendum, erat nec dapibus eleifend, nunc ipsum fermentum orci, ac  pellentesque dolor ante dictum lectus. Suspendisse eu posuere enim.  Nulla facilisi. Praesent eu augue arcu. Nam a purus leo. Nulla facilisi.  Integer mattis mauris et est lobortis a scelerisque neque convallis.  Donec feugiat dignissim neque vel ornare. &lt;/p&gt;
+            &lt;p&gt; Etiam semper urna eget dolor varius quis iaculis augue tempor. Sed in  diam suscipit quam tempus imperdiet. Morbi sollicitudin, justo et  fringilla aliquet, lacus elit porta leo, ornare elementum orci turpis  vitae odio. Aenean ullamcorper, justo vitae blandit porta, tellus augue  tristique neque, id interdum enim turpis sit amet erat. Nulla fringilla  gravida velit sed laoreet. Morbi ut nisi a ligula tristique pulvinar. In  ligula ante, mattis tincidunt cursus a, ultricies eget sapien. &lt;/p&gt;
+            &lt;h3 id="two"&gt;Section 2&lt;/h3&gt;
+            &lt;p&gt; Aliquam at augue massa, at sagittis turpis. Donec ac enim at leo aliquam  ultricies non nec tortor. Quisque tristique ligula ac erat dapibus eget  pharetra turpis pharetra. Nulla sit amet mauris sapien. Sed tempus,  magna vitae convallis cursus, dolor lorem tempor ipsum, in suscipit  neque nibh a risus. Nullam gravida commodo ultricies. Etiam mollis  tempus nisi, sed molestie arcu interdum at. Nunc ac arcu leo. Nunc  sapien leo, vehicula vitae molestie id, adipiscing nec est. &lt;/p&gt;
+            &lt;p&gt; Fusce iaculis magna laoreet magna vestibulum id rhoncus felis cursus.  Etiam in suscipit sapien. Vestibulum ante ipsum primis in faucibus orci  luctus et ultrices posuere cubilia Curae; Vestibulum ipsum ante,  placerat in imperdiet ut, pharetra vel enim. Phasellus dolor velit,  aliquam eu congue in, pretium id dui. Sed ac massa nisi. Maecenas  accumsan lacinia diam eu auctor. Mauris elementum, mi vel dictum  blandit, eros arcu dignissim mauris, eu ultrices lacus lectus ac dui.  Cras ipsum dolor, vestibulum vel imperdiet consectetur, imperdiet  sagittis nisi. Mauris consectetur vulputate volutpat. Sed tincidunt,  lorem gravida consectetur aliquam, magna arcu gravida justo, condimentum  facilisis dui justo eu magna. Pellentesque at elit quam. &lt;/p&gt;
+            &lt;h3 id="three"&gt;Section 3&lt;/h3&gt;
+            &lt;p&gt; Nulla facilisi. Duis est nibh, rutrum in hendrerit a, faucibus sit amet  augue. Proin id augue in magna rutrum tristique vitae at libero. Etiam  nulla nisl, pretium eget condimentum et, egestas sed diam. Maecenas  pellentesque metus eu mi viverra fermentum tristique turpis suscipit.  Nullam quis ultrices tellus. Suspendisse aliquam tempor velit eu  interdum. Nunc urna libero, dapibus at varius nec, hendrerit in est.  Donec faucibus magna id lorem feugiat et ornare nisl vestibulum. Fusce  euismod malesuada dui, in porttitor odio egestas ac. Morbi sollicitudin  interdum pulvinar. Cras non arcu velit. &lt;/p&gt;
+            &lt;p&gt;Sed in  diam suscipit quam tempus imperdiet. Morbi sollicitudin, justo et  fringilla aliquet, lacus elit porta leo, ornare elementum orci turpis  vitae odio. Aenean ullamcorper, justo vitae blandit porta, tellus augue  tristique neque, id interdum enim turpis sit amet erat. Nulla fringilla  gravida velit sed laoreet. Morbi ut nisi a ligula tristique pulvinar. In  ligula ante, mattis tincidunt cursus a, ultricies eget sapien. &lt;/p&gt;
+              &lt;p&gt;Etiam mollis  tempus nisi, sed molestie arcu interdum at. Nunc ac arcu leo. Nunc  sapien leo, vehicula vitae molestie id, adipiscing nec est. Nunc  bibendum, erat nec dapibus eleifend, nunc ipsum fermentum orci, ac  pellentesque dolor ante dictum lectus. Suspendisse eu posuere enim.  Nulla facilisi. Praesent eu augue arcu. Nam a purus leo. Nulla facilisi.  Integer mattis mauris et est lobortis a scelerisque neque convallis.  Donec feugiat dignissim neque vel ornare.&lt;/p&gt;
+          &lt;p&gt;&lt;a href="#top" title="back to top"&gt;Back to top&lt;/a&gt;&lt;/p&gt;
+            &lt;/body&gt;
+          &lt;/html&gt;          
+      </code></pre>
+      <h5></h5>
+    </div>
 </body>
 
 </html>

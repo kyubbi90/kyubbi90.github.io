@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <script src="../js/jquery-3.3.1.min.js"></script>  
+  <script src="../js/jquery-3.3.1.min.js"></script>
   <link rel="stylesheet" href="../css/bootstrap.min.css">
   <script src="../js/bootstrap.min.js"></script>
 
@@ -61,9 +62,241 @@
     </ul>
   </nav>
 </head>
+
 <body>
-  <h1>HTML Essential Training Part 1</h1>
-  <p></p>
+  <div class="container">
+    <h1>HTML Essential Training Part 1</h1>
+    <h2>Below are code snippets I made based on the lectures from
+      <a href="https://www.lynda.com/HTML-tutorials/HTML-Essential-Training/170427-2.html">this Lynda.com course</a>.</h2>
+    <h3>Chapter 1</h3>
+    <h5>syntax.html</h5>
+    <pre> <code>&lt;h1&gt;HTML uses tags to identify page content.
+      &lt;em&gt;This text, for example, is a &lt;strong&gt;paragraph.&lt/strong&gt;&lt/em&gt;&lt/h1&gt;</code></pre>
+    <h3>Chapter 2</h3>
+    <h5>doctype.html</h5>
+    <pre><code>
+      &lt;!DOCTYPE html&gt;
+    </code></pre>
+    <h5>head.html</h5>
+    <pre><code>
+      &lt;!doctype html&gt;
+        &lt;html lang="en"&gt;
+        &lt;head&gt;
+        &lt;meta charset="utf-8"&gt;
+        &lt;meta name="description" content="A page for exploring HTML documents"&gt;
+        &lt;title>Basic HTML document&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;/html&gt;
+      </code></pre>
+    <h5>structure.html</h5>
+    <pre><code>
+        &lt;!DOCTYPE HTML&gt;
+        &lt;html lang="en"&gt;
+        &lt;head&gt;
+        &lt;meta charset="utf-8"&gt;
+        &lt;meta name="description" content="A page for exploring basic HTML documents"&gt;
+        &lt;title>Basic HTML document&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+        &lt;h1>Page content&lt;/h1&gt;
+        &lt;p&gt;The main page content appears inside the &lt;b&gt;body&lt;/b&gt; tag. <br>  HTML contains several elements that allow you to properly structure and format your content, which we'll cover later.&lt;/p&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+      </code></pre>
+    <h5>body.html</h5>
+    <pre><code>
+      &lt;!doctype html&gt;
+        &lt;html lang="en"&gt;
+        &lt;head&gt;
+        &lt;meta charset="utf-8"&gt;
+        &lt;meta name="description" content="A page for exploring basic HTML documents"&gt;
+        &lt;title>Basic HTML document&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+        &lt;h1>Page content&lt;/h1&gt;
+        &lt;p>The main page content appears inside the &lt;b&gt;body&lt;/b&gt; 
+            tag. HTML contains several elements that allow you to properly structure and
+             format your content, which we'll cover later&lt;/p&gt;
+             &lt;/body&gt;
+             &lt;/html&gt;
+            </code></pre>
+    <h5>models.html</h5>
+    <pre><code>
+        &lt;!doctype html&gt;
+        &lt;html lang="en"&gt;
+        &lt;head&gt;
+        &lt;meta charset="utf-8"&gt;
+        &lt;meta name="description" content="A page for exploring HTML content models"&gt;
+        &lt;title&gt;Content models&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+        &lt;h1&gt;Content models&lt;/h1&gt;
+        &lt;p&gt;In HTML 4 there were only two main content models, block and inline level elements. &lt;b&gt;Block level&lt;/b&gt; elements <br>would stack on top of each other in normal document flow while &lt;b&gt;inline level&lt;/b&gt; elements typically appear within the flow of text content.&lt;/p&gt;
+        &lt;p&gt;In this example the &lt;b&gt;heading 1&lt;/b&gt; and the &lt;b&gt;paragraphs&lt;/b&gt; are block level items, while the bold <br>tags and the link below are examples of inline level elements.&lt;/p&gt;
+        &lt;p&gt;In HTML5 new content models have been created to expand the structure and semantic capabilities of HTML. There are seven main <br>models: &lt;b&gt;Flow, Metadata, Embedded, <br>Interactive, Heading, Phrasing, and Sectioning&lt;/b&gt;. To learn more about them, visit the <br>&lt;a href="http://www.w3.org/TR/html5/dom.html#kinds-of-content"&gt;interactive graphic&lt;/a&gt; <br>contained in the W3C HTML5 specification.&lt;/p&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+    </code></pre>
+    <h3>Chapter 3</h3>
+    <h5>breaks.html</h5>
+    <pre><code>
+        &lt;!doctype html&gt;
+        &lt;html lang="en"&gt;
+          &lt;head&gt;
+          &lt;meta charset="utf-8"&gt;
+          &lt;title&gt;Formatting page content&lt;/title&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+            &lt;h1&gt;HTML Essential Training&lt;/h1&gt;
+            &lt;h2&gt;Formatting page content&lt;/h2&gt;
+            &lt;p&gt;In this series of exercises, we'll explore how to use HTML elements to format basic page content.&lt;/p&gt;
+            &lt;h3&gt;Adding headings&lt;/h3&gt;
+            &lt;p&gt;Headings help define the structure of the page and control the hierarchy of the content. You can use heading values ranging from a top-level heading of h1 all the way down to an h6. While there are several competing theories on the exact strategy to use when choosing headings, what really matters is that you are using them in an intelligent  manner, to accurately reflect the importance of your content. It's also important to be consistent in how you use headings across your site, so deciding on when and how to use headings is an important part of planning your site.&lt;/p&gt;
+            &lt;h3&gt;Using paragraphs&lt;/h3&gt;
+            &lt;p&gt;The paragraph tag (&lang;p&rang;) is one of the most basic formatting tags, and one that you'll use often. It indicates a paragraph of text, and should be used for each individual paragraph.&lt;/p&gt;
+            &lt;h3&gt;Line breaks&lt;/h3&gt;
+            &lt;p&gt;Occasionally you'll need to perform a "soft return," that is, create a new line without using a new paragraph. To do that in HTML, you use the line break tag (&lang;br&rang;). Line break tags are inline, meaning you can use them within headers and paragraphs, and don't require a closing tag.&lt;/p&gt;
+            &lt;p&gt;Let's say you were formatting an address, for example. You could use line breaks to make sure each line of the address appeared on a separate line, but still remained within the same paragraph.&lt;/p&gt;
+            &lt;p&gt;lynda.com&lt;br&gt;
+               6410 Via Real&lt;br&gt;
+                Carpinteria, CA 93103.&lt;/p&gt;
+          &lt;/body&gt;
+        &lt;/html&gt;
+    </code></pre>
+    <h5>emphasis.html</h5>
+    <pre><code>
+        &lt;!doctype html&gt;
+        &lt;html lang="en"&gt;
+          &lt;head&gt;
+          &lt;meta charset="utf-8"&gt;
+          &lt;title&gt;Formatting page content&lt;/title&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+            &lt;h1&gt;HTML Essential Training&lt;/h1&gt;
+            &lt;h2&gt;Formatting page content&lt;/h2&gt;
+            &lt;p&gt;In this series of exercises, we'll explore how to use HTML elements to format basic page content.&lt;/p&gt;
+            &lt;h3&gt;Emphasizing text&lt;/h3&gt;
+            &lt;p&gt;Often you will want to emphasize a particular phrase or word within your text. HTML gives you several different tags to do this with. In this exercise we'll explore the four most common formatting tags you'll use to emphasize content.&lt;/p&gt;
+            &lt;dl&gt;
+            &lt;dt&gt;&lt;b&gt;The Bold Tag&lt;/b&gt;&lt;/dt&gt;
+            &lt;dd&gt;The bold tag (&lang;b&rang;) is mean to represent a span of text that you wish to set apart stylistically from the rest of the text without inferring any type of special relevance or meaning. It was removed in XHTML as being solely presentational, but added back to HTML5. As you would expect, browsers typically bold this text.&lt;/dd&gt;
+            &lt;dt&gt;&lt;b&gt;The Strong Tag&lt;/b&gt;&lt;/dt&gt;
+            &lt;dd&gt;By using the strong tag (&lang;strong&rang;) you are representing a string of text as having strong importance. The text should be considered to be more important than the text surrounding it. It is typically displayed as bold.&lt;/dd&gt;
+            &lt;dt&gt;&lt;b&gt;The Italic Tag&lt;/b&gt;&lt;/dt&gt;
+            &lt;dd&gt;Like the bold tag, the italic tag (&lang;i&rang;) represents a string of text that is set apart stylistically from the text around it. No particular meaning is attached to the text, rather it is rendered in italics. Helpful for phrases, terms, or any text that is normally displayed in &lt;i&gt;italics&lt;/i&gt;.&lt;/dd&gt;
+            &lt;dt&gt;&lt;b&gt;The Emphasis Tag&lt;/b&gt;&lt;/dt&gt;
+            &lt;dd&gt;The emphasis tag (&lang;em&rang;), or "em" tag, denotes text that is emphasized more than the text around it. Although this tag is usually rendered in &lt;i&gt;italics&lt;/i&gt;, it shouldn't be used in place of the italics tag, rather it should be used for text that needs to emphasized for some reason.&lt;/dd&gt;
+                &lt;/dl&gt;
+            &lt;h3&gt;Wait.... what?&lt;/h3&gt;
+            &lt;p&gt;You're probably wondering why there are multiple tags for bolding and italicizing text. If you are, don't worry, &lt;strong&gt;you're not alone!&lt;/strong&gt; This is one of the most confusing aspects of learning HTML. The easiest way for me to explain it is this: One set of tags is &lt;em&gt;presentational&lt;/em&gt;, while the other is &lt;em&gt;logical&lt;/em&gt;. What that means is that presentational text doesn't convey explicit meaning, it merely serves to change the styling of the text. Logical elements however do convey a specific meaning. Text that is either bold or italic are just that, bold or italic. Text that is represented with a strong or em tag can represent multiple states. Using styles, for example, you could change it so that the text is underlined or highlighted. By contrast, it wouldn't make much sense to change the styling of a bold or italic element, since they are represented exactly as intended.&lt;/p&gt;
+        &lt;p&gt;There are other elements you'll need to research when learning about emphasizing text as well. The &lt;b&gt;cite tag&lt;/b&gt; (&lang;cite&rang;), for example, is used for citing a work such as a book title, or an author, and is usually displayed as italicized text.&lt;/p&gt;
+          &lt;/body&gt;
+        &lt;/html&gt;
+    </code></pre>
+    <h5>format.html</h5>
+    <pre><code>
+        &lt;!doctype html&gt;
+        &lt;html lang="en"&gt;
+          &lt;head&gt;
+          &lt;meta charset="utf-8"&gt;
+          &lt;title&gt;Formatting page content&lt;/title&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+            &lt;p&gt;What &lt;strong&gt;am&lt;/strong&gt; I?&lt;/p&gt;
+          &lt;/body&gt;
+        &lt;/html&gt;
+    </code></pre>
+    <h5>headings.html</h5>
+    <pre><code>
+        &lt;!doctype html&gt;
+        &lt;html lang="en"&gt;
+          &lt;head&gt;
+          &lt;meta charset="utf-8"&gt;
+          &lt;title&gt;Formatting page content&lt;/title&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+            &lt;h1&gt;HTML Essential Training&lt;/h1&gt;
+            &lt;h2&gt;Formatting page content&lt;/h2&gt;
+            In this series of exercises, we'll explore how to use HTML elements to format basic page content.
+            &lt;h3&gt;Adding headings&lt;/h3&gt;
+            Headings help define the structure of the page and control the hierarchy of the content. You can use heading values ranging from a top-level heading of h1 all the way down to an h6. While there are several competing theories on the exact strategy to use when choosing headings, what really matters is that you are using them in an intelligent  manner, to accurately reflect the importance of your content. It's also important to be consistent in how you use headings across your site, so deciding on when and how to use headings is an important part of planning your site.
+            &lt;h3&gt;Using paragraphs&lt;/h3&gt;
+            The paragraph tag (&lang;p&rang;) is one of the most basic formatting tags, and one that you'll use often. It indicates a paragraph of text, and should be used for each individual paragraph.
+            &lt;h3&gt;Line breaks&lt;/h3&gt;
+            Occasionally you'll need to perform a "soft return," that is, create a new line without using a new paragraph. To do that in HTML, you use the line break tag (&lang;br&rang;). Line break tags are inline, meaning you can use them within headers and paragraphs, and don't require a closing tag. 
+            Let's say you were formatting an address, for example. You could use line breaks to make sure each line of the address appeared on a separate line, but still remained within the same paragraph.
+            lynda.com 6410 Via Real Carpinteria, CA 93103.
+          &lt;/body&gt;
+        &lt;/html&gt;
+    </code></pre>
+    <h5>paragraphs.html</h5>
+    <pre><code>
+        &lt;!doctype html&gt;
+        &lt;html lang="en"&gt;
+          &lt;head&gt;
+          &lt;meta charset="utf-8"&gt;
+          &lt;title&gt;Formatting page content&lt;/title&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+            &lt;h1&gt;HTML Essential Training&lt;/h1&gt;
+            &lt;h2&gt;Formatting page content&lt;/h2&gt;
+            &lt;p&gt;In this series of exercises, we'll explore how to use HTML elements to format basic page content.&lt;/p&gt;
+            &lt;h3&gt;Adding headings&lt;/h3&gt;
+           &lt;p&gt; Headings help define the structure of the page and control the hierarchy of the content. 
+             You can use heading values ranging from a top-level heading of h1 all the way down to an h6. 
+             While there are several competing theories on the exact strategy to use when choosing headings,
+              what really matters is that you are using them in an intelligent  manner, to accurately reflect the importance of your content. It's also important to be consistent in how you use headings across your site, so deciding on when and how to use headings is an important part of planning your site.&lt;/p&gt;
+            &lt;h3&gt;Using paragraphs&lt;/h3&gt;
+            &lt;p&gt;The paragraph tag (&lang;p&rang;) is one of the most basic formatting tags, and one that you'll use often. It indicates a paragraph of text, and should be used for each individual paragraph.&lt;/p&gt;
+            &lt;h3&gt;Line breaks&lt;/h3&gt;
+            &lt;p&gt;Occasionally you'll need to perform a "soft return," that is, create a new line without using a new paragraph. To do that in HTML, you use the line break tag (&lang;br&rang;). Line break tags are inline, meaning you can use them within headers and paragraphs, and don't require a closing tag.&lt;/p&gt; 
+            &lt;p&gt;Let's say you were formatting an address, for example. You could use line breaks to make sure each line of the address appeared on a separate line, but still remained within the same paragraph.&lt;/p&gt;
+            &lt;p&gt;lynda.com 6410 Via Real Carpinteria, CA 93103.&lt;/p&gt;
+          &lt;/body&gt;
+        &lt;/html&gt;
+    </code></pre>
+    <h5>special.html</h5>
+    <pre><code>
+        &lt;!doctype html&gt;
+        &lt;html lang="en"&gt;
+          &lt;head&gt;
+          &lt;meta charset="utf-8"&gt;
+          &lt;title&gt;Formatting page content&lt;/title&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+            &lt;h1&gt;HTML Essential Training&lt;/h1&gt;
+            &lt;h2&gt;Formatting page content&lt;/h2&gt;
+            &lt;p&gt;In this series of exercises, we'll explore how to use HTML elements to format basic page content.&lt;/p&gt;
+            &lt;h3&gt;Displaying special characters&lt;/h3&gt;
+            &lt;p&gt;Certain characters are reserved for HTML, meaning that you aren't allowed to use them in regular content. Using a left angle bracket like this "&lang;" 
+              in your code can cause rendering issues in certain situations. 
+              Other characters are special characters or symbols that might not be available through the keyboard, or are used by other languages. To represent those characters in normal text, you can use what are known as named character entities.&lt;/p&gt;
+            &lt;p&gt;These are special codes that the browser or user agent will then replace with the requested character. The syntax for them is relatively straightforward. You start with an ampersand (&amp;) followed by the named entity that is then followed by a semicolon. To display an ampersand, for example, you would type in &amp;amp;. This can be extremely helpful when displaying &copy; and &trade; symbols, or writing mathematical formulas.&lt;/p&gt;
+            &lt;p&gt;You can find a very thorough list of named character entities on 
+              &lt;a href="http://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references"&gt;Wikipedia&lt;/a&gt;.&lt;/p&gt;
+          &lt;/body&gt;
+        &lt;/html&gt;        
+    </code></pre>
+    <h5>whitespace.html</h5>
+    <pre><code>
+        &lt;!doctype html&gt;
+        &lt;html lang="en"&gt;
+          &lt;head&gt;
+          &lt;meta charset="utf-8"&gt;
+          &lt;title&gt;Formatting page content&lt;/title&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+            &lt;h1&gt;HTML Essential Training&lt;/h1&gt;
+            &lt;h2&gt;Formatting page content&lt;/h2&gt;
+            &lt;p&gt;In this series of exercises, we'll explore how to use HTML elements to format basic page content.&lt;/p&gt;
+            &lt;h3&gt;Controlling white space&lt;/h3&gt;
+            &lt;p&gt;By default, browsers will ignore any white space after the first space. To add additional white space, you must use the &amp;nbsp; entity.&lt;/p&gt;
+            &lt;p&gt;Try it here. Add as much white space as you want here.&lt;/p&gt;
+            &lt;p&gt;Keep in mind that the primary purpose of the non-breaking space is to inform browsers when a line break shouldn't occur during a string of text. For example, adding a non-breaking space between Formula&nbsp;One would ensure that a line break never occurs that would split up the words Formula and One. To that end, never use the non-breaking space character to control paragraph indentations or fake a tab character. CSS should control that type of visual formatting.&lt;/p&gt; 
+          &lt;/body&gt;
+        &lt;/html&gt;        
+    </code></pre>
+  </div>
 </body>
 
 </html>

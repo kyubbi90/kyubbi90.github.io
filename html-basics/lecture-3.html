@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <script src="../js/jquery-3.3.1.min.js"></script>  
+  <script src="../js/jquery-3.3.1.min.js"></script>
   <link rel="stylesheet" href="../css/bootstrap.min.css">
   <script src="../js/bootstrap.min.js"></script>
 
@@ -61,8 +62,366 @@
     </ul>
   </nav>
 </head>
-<body>
-  <h1>HTML Essential Training Part 3</h1>
-</body>
 
+<body>
+  <div class="container">
+  <h1>HTML Essential Training Part 3</h1>
+  <h2>Below are code snippets I made based on the lectures from
+    <a href="https://www.lynda.com/HTML-tutorials/HTML-Essential-Training/170427-2.html">this Lynda.com course</a>.</h2>
+    <h3>Chapter 6</h3>
+    <h5>description.html</h5>
+    <pre><code>
+        &lt;!doctype html&gt;
+        &lt;html lang="en"&gt;
+        &lt;head&gt;
+            &lt;meta charset="utf-8"&gt;
+            &lt;title&gt;Creating lists&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+        &lt;h1&gt;HTML Essential Training&lt;/h1&gt;
+        &lt;h2&gt;Creating lists&lt;/h2&gt;
+        &lt;p&gt;Let's examine how to create lists in HTML&lt;/p&gt;
+        &lt;h3&gt;Description lists&lt;/h3&gt;
+        &lt;h4&gt;Basic description list&lt;/h4&gt;
+        &lt;dl&gt;
+            &lt;dt&gt;Unordered list&lt;/dt&gt;
+            &lt;dd&gt;Grouping of list items in no specific order&lt;/dd&gt;
+            &lt;dt&gt;Ordered list&lt;/dt&gt;
+            &lt;dd&gt;Grouping of list items in a specific order&lt;/dd&gt;
+            &lt;dt&gt;Description list&lt;/dt&gt;
+            &lt;dd&gt;Grouping of terms and descriptions&lt;/dd&gt;
+        &lt;/dl&gt;
+        &lt;h4&gt;Multiple terms&lt;/h4&gt;
+        &lt;dl&gt;
+            &lt;dt&gt;DL&lt;/dt&gt;
+            &lt;dt&gt;Description list&lt;/dt&gt;
+            &lt;dt&gt;Definition list&lt;/dt&gt;
+            &lt;dd&gt;&lt;p&gt;List that groups content together by terms and descriptions. Used frequently for FAQs, glossaries, and
+                dictionaries&lt;/p&gt;
+                &lt;p&gt;Until HTML5, Definition Lists were frequently used to mark up dialog. That practice is discouraged now but no
+                    suitable semantic alternative has been proposed, leading to its continued widespread use for dialog&lt;/p&gt;
+            &lt;/dd&gt;
+        &lt;/dl&gt;
+        &lt;h4&gt;Multiple descriptions&lt;/h4&gt;
+        &lt;dl&gt;
+            &lt;dt&gt;Course&lt;/dt&gt;
+            &lt;dd&gt;HTML Essential Training&lt;/dd&gt;
+            &lt;dt&gt;Author&lt;/dt&gt;
+            &lt;dd&gt;James Williamson&lt;/dd&gt;
+            &lt;dt&gt;Producer&lt;/dt&gt;
+            &lt;dd&gt;Dan Weston&lt;/dd&gt;
+            &lt;dt&gt;Technical Reviewers&lt;/dt&gt;
+            &lt;dd&gt;Simon Allardice&lt;/dd&gt;
+            &lt;dd&gt;Garrick Chow&lt;/dd&gt;
+            &lt;dd&gt;Josh Fitgatner&lt;/dd&gt;
+        &lt;/dl&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;        
+    </code></pre>
+    <h5>ordered.html</h5>
+    <pre><code>
+        &lt;!doctype html&gt;
+        &lt;html lang="en"&gt;
+          &lt;head&gt;
+          &lt;meta charset="utf-8"&gt;
+          &lt;title&gt;Creating lists&lt;/title&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+            &lt;h1&gt;HTML Essential Training&lt;/h1&gt;
+            &lt;h2&gt;Creating lists&lt;/h2&gt;
+            &lt;p&gt;Let's examine how to create lists in HTML&lt;/p&gt;
+            &lt;h3&gt;Ordered lists&lt;/h3&gt;
+            &lt;ol start="6" reversed&gt;
+              &lt;li&gt;Item one    &lt;/li&gt;
+              &lt;li&gt;Item two    &lt;/li&gt;
+              &lt;li&gt;Item three    
+                &lt;ol type="a"&gt;
+                  &lt;li&gt;item 3.1&lt;/li&gt;
+                  &lt;li&gt;item 3.2&lt;/li&gt;
+                  &lt;li&gt;item 3.3&lt;/li&gt;
+                &lt;/ol&gt;
+              &lt;/li&gt;
+              &lt;li&gt;item four &lt;/li&gt;
+            &lt;/ol&gt;
+          &lt;/body&gt;
+        &lt;/html&gt;        
+    </code></pre>
+    <h5>unordered.html</h5>
+    <pre><code>
+        &lt;!doctype html&gt;
+        &lt;html lang="en"&gt;
+        &lt;head&gt;
+            &lt;meta charset="utf-8"&gt;
+            &lt;title&gt;Creating lists&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+        &lt;h1&gt;HTML Essential Training&lt;/h1&gt;
+        &lt;h2&gt;Creating lists&lt;/h2&gt;
+        &lt;p&gt;Let's examine how to create lists in HTML&lt;/p&gt;
+        &lt;h3&gt;Unordered lists&lt;/h3&gt;
+        &lt;ul&gt;
+            &lt;li&gt;Item one&lt;/li&gt;
+            &lt;li&gt;Item two&lt;/li&gt;
+            &lt;li&gt;Item three
+                &lt;ul&gt;
+                    &lt;li&gt;item 3.1&lt;/li&gt;
+                    &lt;li&gt;item 3.2&lt;/li&gt;
+                    &lt;li&gt;item 3.3&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/li&gt;
+            &lt;li&gt;item four&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;      
+    </code></pre>
+    <h3>Chapter 7</h3>
+    <h5>color.html</h5>
+    <pre><code>
+        &lt;!doctype html&gt;
+        &lt;html lang="en"&gt;
+        &lt;head&gt;
+        &lt;meta charset="utf-8"&gt;
+        &lt;title&gt;Controlling color&lt;/title&gt;
+        &lt;style&gt;
+        html {
+          margin: 0;
+          padding: 0;
+            background-color: #777;
+        }
+        body {
+          width: 70%;
+          margin: 0 auto;
+          font: 100% Arial, Helvetica, sans-serif;
+          padding: 1em 50px;
+            background: white;
+            border-bottom:10px solid gold;
+        }
+        h1 {
+          font-family: Georgia, "Times New Roman", Times, serif;
+          font-size: 2em;
+          font-weight: normal;
+          font-style: italic;
+          margin: 0 0 .4em;
+          padding: 5px 10px;
+            background: rgb(44,45,140);
+            color: #ddd;
+        }
+        p {
+          line-height: 1.6;
+          text-align: justify;
+          width: 60%;
+          margin: 0;
+          margin-bottom: 1em;
+        }
+        &lt;/style&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+        &lt;h1&gt;HTML and CSS&lt;/h1&gt;
+        &lt;p&gt;One way to visualize how HTML and CSS work together is to think about a new building under construction. As the building goes up, the structure of the building is built first. At just the structural level, all you see is the frame of the new building, and other than the basic shape, you don&rsquo;t really know how the building is going to look. Once the frame is complete, the &ldquo;skin&rdquo; of the building is added. This could be brick, wood, glass, stucco, or any number of outer materials that determine what the final look of the building will be.&lt;/p&gt;
+        &lt;p&gt;HTML and CSS work much the same way. HTML gives us the structure, or &ldquo;frame&rdquo;, of our pages. We can use CSS to then control how this structure looks, where elements are positioned, and add additional decorative styling. What&rsquo;s more, much the same way a building can change dramatically by adding a new façade; web pages can change their visual design by simply changing the page&rsquo;s CSS.&lt;/p&gt;
+        &lt;p&gt;This separation of structure and presentation creates a very flexible and efficient workflow where the structure of pages is independent of how the pages are presented. This allows you to update styling without changing page content, and provide different visual designs based on the context of where the page is being displayed.&lt;/p&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+    </code></pre>
+    <h5>inline.html</h5>
+    <pre><code>
+        &lt;!doctype html&gt;
+        &lt;html lang="en"&gt;
+        &lt;head&gt;
+        &lt;meta charset="utf-8"&gt;
+        &lt;title&gt;Inline styles&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+        &lt;h1&gt;Using inline styles&lt;/h1&gt;
+        &lt;h2 style="color:red; font-weight:normal;"&gt;Style me using the "style" attribute.&lt;/h2&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;        
+    </code></pre>
+    <h5>style.html</h5>
+    <pre><code>
+        &lt;!doctype html&gt;
+        &lt;html lang="en"&gt;
+        &lt;head&gt;
+            &lt;meta charset="utf-8"&gt;
+            &lt;title&gt;embedded styles&lt;/title&gt;
+            &lt;style&gt;
+                h2.alert {
+                    color:red;
+                    font-weight: normal;
+                }
+            &lt;/style&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+        &lt;h1 class="alert"&gt;Using embedded styles&lt;/h1&gt;
+        &lt;h2 class="alert"&gt;Style me using the "style" element.&lt;/h2&gt;
+        &lt;h2&gt;Global styles apply to all instances of the element.&lt;/h2&gt;
+        &lt;/body&gt;
+        </html>      
+    </code></pre>
+    <h5>styles.html</h5>
+    <pre><code>
+        &lt;!doctype html&gt;
+        &lt;html lang="en"&gt;
+        &lt;head&gt;
+        &lt;meta charset="utf-8"&gt;
+        &lt;title&gt;HTML and CSS&lt;/title&gt;
+        &lt;style&gt;
+        body {
+          margin: 0 auto;
+          width: 70%;
+          font: 100% Georgia, "Times New Roman", Times, serif;
+        }
+        p {
+          width: 40%;
+          line-height: 1.8;
+          text-align: justify;
+        }
+        h1 {
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 1.6em;
+        }
+        h2 {
+          font-size: 2em;
+          color: #666;
+          position: fixed;
+          top: 40px;
+          right: 40px;
+        }
+        &lt;/style&gt;
+        &lt;!--&lt;style&gt;
+        body {
+          background: black;
+        }
+        p {
+          display: none;
+        }
+        h1 {
+          display: none;
+        }
+        h2 {
+          font-size: 3em;
+          font-family: Arial, Helvetica, sans-serif;
+          color: red;
+          width: 450px;
+          margin: 50px auto;
+          padding: 0 25px;
+          background: #E7E2A5;
+          border: 4px solid red;
+          text-align: center;
+        }
+        &lt;/style&gt;--&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+        &lt;h1&gt;HTML and CSS&lt;/h1&gt;
+        &lt;p&gt;One way to visualize how HTML and CSS work together is to think about a new building under construction. As the building goes up, the structure of the building is built first. At just the structural level, all you see is the frame of the new building, and other than the basic shape, you don&rsquo;t really know how the building is going to look. Once the frame is complete, the &ldquo;skin&rdquo; of the building is added. This could be brick, wood, glass, stucco, or any number of outer materials that determine what the final look of the building will be.&lt;/p&gt;
+        &lt;p&gt;HTML and CSS work much the same way. HTML gives us the structure, or &ldquo;frame&rdquo;, of our pages. We can use CSS to then control how this structure looks, where elements are positioned, and add additional decorative styling. What&rsquo;s more, much the same way a building can change dramatically by adding a new façade; web pages can change their visual design by simply changing the page&rsquo;s CSS.&lt;/p&gt;
+        &lt;p&gt;This separation of structure and presentation creates a very flexible and efficient workflow where the structure of pages is independent of how the pages are presented. This allows you to update styling without changing page content, and provide different visual designs based on the context of where the page is being displayed. &lt;/p&gt;
+        &lt;h2&gt;Allow me to demonstrate&lt;/h2&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;        
+    </code></pre>
+    <h5>type.html</h5>
+    <pre><code>
+        &lt;!doctype html&gt;
+        &lt;html lang="en"&gt;
+        &lt;head&gt;
+            &lt;meta charset="utf-8"&gt;
+            &lt;title&gt;Controlling typography&lt;/title&gt;
+            &lt;style&gt;
+                body {
+                    width: 70%;
+                    margin: 0 auto;
+                    font: 100% Arial, Helvetica, sans-serif;
+                }
+        
+                h1 {
+                    font-family: Georgia, "Times New Roman", serif;
+                    font-size: 2em;
+                    font-weight: normal;
+                    font-style: italic;
+                    margin: 1em 0 .4em;
+                }
+                p{
+                    font-size: 1em;
+                    line-height: 1.6;
+                    text-align: justify;
+                    width: 60%;
+                    margin: 0;
+                    margin-bottom: 1em;
+                }
+            &lt;/style&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+        &lt;h1&gt;HTML and CSS&lt;/h1&gt;
+        &lt;p&gt;One way to visualize how HTML and CSS work together is to think about a new building under construction. As the
+            building goes up, the structure of the building is built first. At just the structural level, all you see is the
+            frame of the new building, and other than the basic shape, you don&rsquo;t really know how the building is going to
+            look. Once the frame is complete, the &ldquo;skin&rdquo; of the building is added. This could be brick, wood, glass,
+            stucco, or any number of outer materials that determine what the final look of the building will be.&lt;/p&gt;
+        &lt;p&gt;HTML and CSS work much the same way. HTML gives us the structure, or &ldquo;frame&rdquo;, of our pages. We can use
+            CSS to then control how this structure looks, where elements are positioned, and add additional decorative styling.
+            What&rsquo;s more, much the same way a building can change dramatically by adding a new façade; web pages can change
+            their visual design by simply changing the page&rsquo;s CSS.&lt;/p&gt;
+        &lt;p&gt;This separation of structure and presentation creates a very flexible and efficient workflow where the structure of
+            pages is independent of how the pages are presented. This allows you to update styling without changing page
+            content, and provide different visual designs based on the context of where the page is being displayed.&lt;/p&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;        
+    </code></pre>
+    <h5>external.html</h5>
+    <pre><code>
+        &lt;!doctype html&gt;
+        &lt;html lang="en"&gt;
+        &lt;head&gt;
+            &lt;meta charset="utf-8"&gt;
+            &lt;title&gt;External styles&lt;/title&gt;
+            &lt;link rel="stylesheet" href="styles.css"&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+        &lt;h1&gt;HTML and CSS&lt;/h1&gt;
+        &lt;p&gt;&lt;a href="page2.htm" title="page two"&gt;Page 2&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;One way to visualize how HTML and CSS work together is to think about a new building under construction. As the
+            building goes up, the structure of the building is built first. At just the structural level, all you see is the
+            frame of the new building, and other than the basic shape, you don&rsquo;t really know how the building is going to
+            look. Once the frame is complete, the &ldquo;skin&rdquo; of the building is added. This could be brick, wood, glass,
+            stucco, or any number of outer materials that determine what the final look of the building will be.&lt;/p&gt;
+        &lt;p&gt;HTML and CSS work much the same way. HTML gives us the structure, or &ldquo;frame&rdquo;, of our pages. We can use
+            CSS to then control how this structure looks, where elements are positioned, and add additional decorative styling.
+            What&rsquo;s more, much the same way a building can change dramatically by adding a new façade; web pages can change
+            their visual design by simply changing the page&rsquo;s CSS.&lt;/p&gt;
+        &lt;p&gt;This separation of structure and presentation creates a very flexible and efficient workflow where the structure of
+            pages is independent of how the pages are presented. This allows you to update styling without changing page
+            content, and provide different visual designs based on the context of where the page is being displayed.&lt;/p&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;        
+    </code></pre>
+    <h5>page2</h5>
+    <pre><code>
+        &lt;!doctype html&gt;
+        &lt;html lang="en"&gt;
+        &lt;head&gt;
+            &lt;meta charset="utf-8"&gt;
+            &lt;title&gt;External styles&lt;/title&gt;
+            &lt;link rel="stylesheet" href="styles.css"&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+        &lt;h1&gt;Page Two&lt;/h1&gt;
+        &lt;p&gt;&lt;a href="external.htm" title="external styles"&gt;Page One&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;One way to visualize how HTML and CSS work together is to think about a new building under construction. As the
+            building goes up, the structure of the building is built first. At just the structural level, all you see is the
+            frame of the new building, and other than the basic shape, you don&rsquo;t really know how the building is going to
+            look. Once the frame is complete, the &ldquo;skin&rdquo; of the building is added. This could be brick, wood, glass,
+            stucco, or any number of outer materials that determine what the final look of the building will be.&lt;/p&gt;
+        &lt;p&gt;HTML and CSS work much the same way. HTML gives us the structure, or &ldquo;frame&rdquo;, of our pages. We can use
+            CSS to then control how this structure looks, where elements are positioned, and add additional decorative styling.
+            What&rsquo;s more, much the same way a building can change dramatically by adding a new façade; web pages can change
+            their visual design by simply changing the page&rsquo;s CSS.&lt;/p&gt;
+        &lt;p&gt;This separation of structure and presentation creates a very flexible and efficient workflow where the structure of
+            pages is independent of how the pages are presented. This allows you to update styling without changing page
+            content, and provide different visual designs based on the context of where the page is being displayed.&lt;/p&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;        
+    </code></pre>
+  </div>
+</body>
 </html>
