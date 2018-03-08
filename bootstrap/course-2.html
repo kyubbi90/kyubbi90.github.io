@@ -62,7 +62,249 @@
   </nav>
 </head>
 <body>
+  <div class="container">
   <h1>Bootstrap Beginner Crash Course Part 2</h1>
+  <h2>This content was coded along with the second half of <a href="https://www.youtube.com/watch?v=5GcQtLDGXy8">this video</a>.</h2>
+<pre><code>
+    &lt;div class="container"&gt;
+        &lt;button class="btn btn-default"&gt;Button&lt;/button&gt;
+        &lt;a href="#" class="btn btn-default" role="button"&gt;link&lt;/a&gt;
+        &lt;input type="submit" class="btn btn-default" value="submit"&gt;
+        &lt;br&gt;
+        &lt;button class="btn btn-default"&gt;Default&lt;/button&gt;
+        &lt;button class="btn btn-primary"&gt;Primary&lt;/button&gt;
+        &lt;button class="btn btn-success"&gt;Success&lt;/button&gt;
+        &lt;button class="btn btn-info"&gt;Info&lt;/button&gt;
+        &lt;button class="btn btn-warning"&gt;Warning&lt;/button&gt;
+        &lt;button class="btn btn-danger"&gt;Danger&lt;/button&gt;
+        &lt;button class="btn btn-link"&gt;link&lt;/button&gt;
+        &lt;br&gt;
+        &lt;button class="btn btn-default btn-lg"&gt;Default&lt;/button&gt;
+        &lt;button class="btn btn-default"&gt;Default&lt;/button&gt;
+        &lt;button class="btn btn-default btn-sm"&gt;Default&lt;/button&gt;
+        &lt;button class="btn btn-default btn-xs" disabled="disabled"&gt;Default&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;hr&gt;
+    &lt;div class="container"&gt;
+        &lt;form&gt;
+            &lt;div class="form-group"&gt;
+                &lt;label&gt;Name&lt;/label&gt;
+                &lt;input type="text" class="form-control" placeholder="Add Name"&gt;
+            &lt;/div&gt;
+            &lt;div class="form-group"&gt;
+                &lt;label&gt;Email&lt;/label&gt;
+                &lt;input type="email" class="form-control" placeholder="Add Email"&gt;
+            &lt;/div&gt;
+            &lt;div class="form-group"&gt;
+                &lt;label&gt;Message&lt;/label&gt;
+                &lt;textarea class="form-control" placeholder="Add Message"&gt;&lt;/textarea&gt;
+            &lt;/div&gt;
+
+            &lt;div class="form-group"&gt;
+                &lt;label&gt;Gender&lt;/label&gt;
+                &lt;select class="form-control"&gt;
+                    &lt;option value="male"&gt;Male&lt;/option&gt;
+                    &lt;option value="female"&gt;Female&lt;/option&gt;
+                    &lt;option value="other"&gt;Other&lt;/option&gt;
+                &lt;/select&gt;
+            &lt;/div&gt;
+            &lt;div class="form-group"&gt;
+                &lt;label&gt;Upload File&lt;/label&gt;
+                &lt;input type="file"&gt;
+                &lt;p class="help-block"&gt;Only png and jpg allowed&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class="checkbox"&gt;
+                &lt;label&gt;
+                    &lt;input type="checkbox"&gt; Check me out
+                &lt;/label&gt;
+            &lt;/div&gt;
+            &lt;button type="submit" class="btn btn-default"&gt;Submit&lt;/button&gt;
+        &lt;/form&gt;
+        &lt;hr&gt;
+        &lt;form action="form-inline"&gt;
+            &lt;div class="form-group"&gt;
+                &lt;label&gt;Email&lt;/label&gt;
+                &lt;input type="email" class="form-control" placeholder="Email"&gt;
+            &lt;/div&gt;
+            &lt;div class="form-group"&gt;
+                &lt;label&gt;Password&lt;/label&gt;
+                &lt;input type="password" class="form-control" placeholder="Password"&gt;
+            &lt;/div&gt;
+            &lt;div class="checkbox"&gt;
+                &lt;label&gt;
+                    &lt;input type="checkbox"&gt; Remember Me
+                &lt;/label&gt;
+                &lt;button type="submit" class="btn btn-default"&gt;Login&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/form&gt;
+    &lt;/div&gt;
+    &lt;hr&gt;
+    &lt;div class="container"&gt;
+        &lt;table class="table table-striped table-bordered table-hover table-condensed"&gt;
+            &lt;tr&gt;
+                &lt;th&gt;Firstname&lt;/th&gt;
+                &lt;th&gt;Lastname&lt;/th&gt;
+                &lt;th&gt;Age&lt;/th&gt;
+            &lt;/tr&gt;
+            &lt;tr class="danger"&gt;
+                &lt;th&gt;A&lt;/th&gt;
+                &lt;th&gt;B&lt;/th&gt;
+                &lt;th&gt;1&lt;/th&gt;
+            &lt;/tr&gt;
+            &lt;tr class="success"&gt;
+                &lt;th&gt;C&lt;/th&gt;
+                &lt;th&gt;D&lt;/th&gt;
+                &lt;th&gt;2&lt;/th&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;th&gt;E&lt;/th&gt;
+                &lt;th&gt;F&lt;/th&gt;
+                &lt;th&gt;3&lt;/th&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;th&gt;G&lt;/th&gt;
+                &lt;th&gt;H&lt;/th&gt;
+                &lt;th&gt;4&lt;/th&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;th&gt;I&lt;/th&gt;
+                &lt;th&gt;J&lt;/th&gt;
+                &lt;th&gt;5&lt;/th&gt;
+            &lt;/tr&gt;
+        &lt;/table&gt;
+    &lt;/div&gt;
+
+    &lt;hr&gt;
+
+    &lt;div class="container"&gt;
+        &lt;ul class="list-group"&gt;
+            &lt;li class="list-group-item"&gt;1&lt;/li&gt;
+            &lt;li class="list-group-item"&gt;2&lt;/li&gt;
+            &lt;li class="list-group-item"&gt;3&lt;/li&gt;
+            &lt;li class="list-group-item"&gt;4&lt;/li&gt;
+        &lt;/ul&gt;
+
+        &lt;div class="list-group"&gt;
+            &lt;a href="#" class="list-group-item active"&gt;1&lt;/a&gt;
+            &lt;a href="#" class="list-group-item list-group-item-success"&gt;2&lt;/a&gt;
+            &lt;a href="#" class="list-group-item"&gt;3&lt;/a&gt;
+            &lt;a href="#" class="list-group-item disabled"&gt;4&lt;/a&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+
+        &lt;div class="container"&gt;
+            &lt;div class="panel panel-primary"&gt;
+                &lt;div class="panel-heading"&gt;
+                    &lt;h3 class="panel-title"&gt;Panel title&lt;/h3&gt;
+                &lt;/div&gt;
+                &lt;div class="panel-body"&gt;
+                    Panel Content
+                &lt;/div&gt;
+                &lt;div class="panel-footer"&gt;Panel Footer&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;hr&gt;
+            &lt;div class="well"&gt; Hello World&lt;/div&gt;
+            &lt;div class="well well-lg"&gt; Hello World&lt;/div&gt;
+            &lt;div class="well well-sm"&gt; Hello World&lt;/div&gt;
+            &lt;hr&gt;
+
+            &lt;div class="alert alert-success" role="alert"&gt;Success&lt;/div&gt;
+            &lt;div class="alert alert-info" role="alert"&gt;Info&lt;/div&gt;
+            &lt;div class="alert alert-warning" role="alert"&gt;Warning&lt;/div&gt;
+            &lt;div class="alert alert-danger" role="alert"&gt;Danger&lt;/div&gt;
+
+            &lt;div class="alert alert-warning alert-dismissable" role="alert"&gt;
+                &lt;button type="button" class="close" data-dismiss="alert"&gt;
+                    &lt;span&gt;&times;&lt;/span&gt;
+                &lt;/button&gt;
+                Close
+            &lt;/div&gt;
+
+            &lt;hr&gt;
+            &lt;div class="progress"&gt;
+                &lt;div class="progress-bar progress-bar-success progress-bar-striped active" style="width:50%"&gt;
+                    50%
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;hr&gt;
+            &lt;span class="label label-default"&gt;Default&lt;/span&gt;
+            &lt;h1&gt;Hello
+                &lt;span class="label label-primary"&gt;Primary&lt;/span&gt;
+            &lt;/h1&gt;
+            &lt;span class="label label-success"&gt;Success&lt;/span&gt;
+            &lt;span class="label label-info"&gt;Info&lt;/span&gt;
+            &lt;span class="label label-warning"&gt;Warning&lt;/span&gt;
+            &lt;span class="label label-danger"&gt;Danger&lt;/span&gt;
+
+            &lt;a href="#"&gt;Inbox
+                &lt;span class="badge"&gt;50&lt;/span&gt;
+            &lt;/a&gt;
+
+            &lt;button class="btn btn-primary" type="button"&gt;
+                Messages
+                &lt;span class="badge"&gt;2&lt;/span&gt;
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+        &lt;div class="container"&gt;
+            &lt;img class="thumbnail" src="https://placeholdit.imgix.net/~text?txtsize=33&txt-350%C3%97150%w=350&h=150" &lt;img class="img-rounded"
+                src="https://placeholdit.imgix.net/~text?txtsize=33&txt-350%C3%97150%w=350&h=150"&gt;
+            &lt;img class="img-circle" src="https://placeholdit.imgix.net/~text?txtsize=33&txt-350%C3%97150%w=350&h=150"&gt;
+        &lt;/div&gt;
+
+        &lt;hr&gt;
+        &lt;div class="container"&gt;
+            &lt;div class="row"&gt;
+                &lt;div class="col-md-8"&gt;
+                    &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis deleniti voluptatem beatae numquam
+                        molestiae magni quos culpa nisi optio facere, ipsum, ducimus asperiores repellat doloremque magnam
+                        natus excepturi vero aliquid?&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class="col-md-4"&gt;
+                    &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis deleniti voluptatem beatae numquam
+                        molestiae magni quos culpa nisi optio facere, ipsum, ducimus asperiores repellat doloremque magnam
+                        natus excepturi vero aliquid?&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="row"&gt;
+                &lt;div class="col-md-3"&gt;
+                    &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis deleniti voluptatem beatae numquam
+                        molestiae magni quos culpa nisi optio facere, ipsum, ducimus asperiores repellat doloremque magnam
+                        natus excepturi vero aliquid?&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class="col-md-3"&gt;
+                    &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis deleniti voluptatem beatae numquam
+                        molestiae magni quos culpa nisi optio facere, ipsum, ducimus asperiores repellat doloremque magnam
+                        natus excepturi vero aliquid?&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class="col-md-3"&gt;
+                    &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis deleniti voluptatem beatae numquam
+                        molestiae magni quos culpa nisi optio facere, ipsum, ducimus asperiores repellat doloremque magnam
+                        natus excepturi vero aliquid?&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class="col-md-3"&gt;
+                    &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis deleniti voluptatem beatae numquam
+                        molestiae magni quos culpa nisi optio facere, ipsum, ducimus asperiores repellat doloremque magnam
+                        natus excepturi vero aliquid?&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;hr&gt;
+            &lt;div class="row"&gt;
+                &lt;div class="col-md-6"&gt;
+                    &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis deleniti voluptatem beatae numquam
+                        molestiae magni quos culpa nisi optio facere, ipsum, ducimus asperiores repellat doloremque magnam
+                        natus excepturi vero aliquid?&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class="col-md-6"&gt;
+                    &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis deleniti voluptatem beatae numquam
+                        molestiae magni quos culpa nisi optio facere, ipsum, ducimus asperiores repellat doloremque magnam
+                        natus excepturi vero aliquid?&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+</div>
 </body>
 
 </html>

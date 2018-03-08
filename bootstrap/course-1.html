@@ -62,7 +62,119 @@
   </nav>
 </head>
 <body>
+  <div class="container">
   <h1>Bootstrap Beginner Crash Course Part 1</h1>
+  <h2>This content was coded along with the first 32 minutes of <a href="https://www.youtube.com/watch?v=5GcQtLDGXy8">this video</a>.</h2>
+  <ul>
+    <li>BootStrap - Front-end framework for Uis and themes</li>
+    <li>Uses HTML/CSS/JavaScript</li>
+    <li>Used fro mobile first websites</li>
+    <li>Most popular framework</li>
+    <li>Why use it
+      <ul>
+        <li>Increased development speed</li>
+        <li>Responsive</li>
+        <li>Consistent</li>
+        <li>Customizable</li>
+        <li>Support</li>
+      </ul>
+    </li>
+    <li>Bootstrap cheat sheet</li>
+  </ul>
+</div>
+<div class="container">
+  <pre><code>
+      &lt;!DOCTYPE html&gt;
+      &lt;html lang="en"&gt;
+      
+      &lt;head&gt;
+          &lt;meta charset="utf-8"&gt;
+          &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+          &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+          &lt;!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags --&gt;
+          &lt;title&gt;Bootstrap 101 Template&lt;/title&gt;
+          &lt;!-- Bootstrap --&gt;
+          &lt;link href="css/bootstrap.min.css" rel="stylesheet"&gt;
+      &lt;/head&gt;
+      
+      &lt;body&gt;
+          &lt;div class="container"&gt;
+              &lt;h1 class="page-header"&gt;Hello, world!
+                  &lt;small&gt;Secondary text&lt;/small&gt;
+              &lt;/h1&gt;
+              &lt;p class="lead"&gt;
+                  &lt;mark&gt;Lorem&lt;/mark&gt;
+                  &lt;del&gt;ipsum,&lt;/del&gt; dolor sit amet consectetur adipisicing elit. Sint voluptas libero eum illo placeat, totam quis veniam
+                  quam modi quasi maiores ipsam accusantium porro. Facere sunt harum dolores eligendi autem!&lt;/p&gt;
+              &lt;hr&gt;
+      
+              &lt;p class="text=left text-lowercase"&gt;Left&lt;/p&gt;
+              &lt;p class="text-center text-uppercase"&gt;Center&lt;/p&gt;
+              &lt;p class="text-right text-capitalize"&gt;right&lt;/p&gt;
+              &lt;p class="textjustify"&gt;Justify&lt;/p&gt;
+              &lt;p class="text-nowrap"&gt;Nowrap&lt;/p&gt;
+              &lt;div class="pull-right"&gt;Div floated to right&lt;/div&gt;
+              &lt;div class="pull-left"&gt;Div floated to left&lt;/div&gt;
+              &lt;div class="clearfix"&gt;&lt;/div&gt;
+              &lt;hr&gt;
+      
+              &lt;blockquote class="blockquote-reverse"&gt;
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea et blanditiis harum? Incidunt, officiis. Quaerat itaque cumque
+                  laudantium reiciendis. Quibusdam ex, saepe velit labore at officia asperiores odio repudiandae aut.
+                  &lt;footer&gt;Quote by
+                      &lt;cite title="John Doe"&gt;John Doe&lt;/cite&gt;
+                  &lt;/footer&gt;
+              &lt;/blockquote&gt;
+      
+              &lt;hr&gt;
+              &lt;ul class="list-unstyled"&gt;
+                  &lt;li&gt;item 1&lt;/li&gt;
+                  &lt;li&gt;item 2&lt;/li&gt;
+                  &lt;li&gt;item 3&lt;/li&gt;
+                  &lt;li&gt;item 4&lt;/li&gt;
+              &lt;/ul&gt;
+              &lt;ul class="list-inline"&gt;
+                  &lt;li&gt;item 1&lt;/li&gt;
+                  &lt;li&gt;item 2&lt;/li&gt;
+                  &lt;li&gt;item 3&lt;/li&gt;
+                  &lt;li&gt;item 4&lt;/li&gt;
+              &lt;/ul&gt;
+      
+              &lt;code&gt;&lt;h1&gt;Heading Text&lt;h1&gt;&lt;/code&gt;
+              &lt;br&gt; Change directory with
+              &lt;kbd&gt;c&lt;/kbd&gt;
+              &lt;br&gt; To edit settings, press
+              &lt;kbd&gt;
+                  &lt;kbd&gt;&lt;/kbd&gt;ctrl&lt;/kbd&gt;
+              &lt;kbd&gt; + &lt;/kbd&gt;
+              &lt;kbd&gt;,&lt;/kbd&gt;
+              &lt;/kbd&gt;
+              &lt;hr&gt;
+              &lt;p class="text-primary"&gt;1&lt;/p&gt;
+              &lt;p class="text-success"&gt;2&lt;/p&gt;
+              &lt;p class="text-info"&gt;3&lt;/p&gt;
+              &lt;p class="text-warning"&gt;4&lt;/p&gt;
+              &lt;p class="text-danger"&gt;5&lt;/p&gt;
+              &lt;p class="text-muted"&gt;6&lt;/p&gt;
+      
+              &lt;p class="bg-primary"&gt;1&lt;/p&gt;
+              &lt;p class="bg-success"&gt;2&lt;/p&gt;
+              &lt;p class="bg-info"&gt;3&lt;/p&gt;
+              &lt;p class="bg-warning"&gt;4&lt;/p&gt;
+              &lt;p class="bg-danger"&gt;5&lt;/p&gt;
+              &lt;p class="bg-muted"&gt;6&lt;/p&gt;
+          &lt;/div&gt;
+          &lt;hr&gt;
+          &lt;div class="container"&gt;&lt;/div&gt;
+          &lt;div style="height: 400px"&gt;&lt;/div&gt;
+          &lt;!-- jQuery (necessary for Bootstrap's JavaScript plugins) --&gt;
+          &lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"&gt;&lt;/script&gt;
+          &lt;!-- Include all compiled plugins (below), or include individual files as needed --&gt;
+          &lt;script src="js/bootstrap.min.js"&gt;&lt;/script&gt;
+      &lt;/body&gt;
+      </html>
+  </code></pre>
+</div>
 </body>
 
 </html>
